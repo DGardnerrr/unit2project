@@ -1,4 +1,10 @@
 package com.example.project2.repository;
 
-public class BookRepository {
+import com.example.project2.model.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public class BookRepository extends JpaRepository<Book, Long> {
+    Book findByName(String bookName) {
+        return null;
+    }
 }

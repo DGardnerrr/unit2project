@@ -2,7 +2,12 @@ package com.example.project2.controller;
 
 import org.springframework.web.bind.annotation.*;
 
+
+
+import java.util.logging.Logger;
+
 @RestController
+@RequestMapping(path="/api")
 public class BookController {
 
     // http://localhost:9092/api/books
