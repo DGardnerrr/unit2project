@@ -63,14 +63,5 @@ public class Book {
         this.release_date = release_date;
     }
 
-    @Override
-    public String toString() {
-        return "book{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", length=" + length +
-                ", release_date='" + release_date + '\'' +
-                '}';
-    }
 
 }
