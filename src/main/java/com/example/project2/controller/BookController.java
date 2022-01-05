@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BookController {
     @GetMapping("/book")  //url
-    public String theBook() { return "book"; }
+    public String getBook() { return "book"; }
 }
 
