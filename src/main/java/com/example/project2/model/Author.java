@@ -27,12 +27,13 @@ public class Author {
     @Column
     private int monthly_books;
 
-
+//many to one
     @ManyToOne
     @JoinColumn(name="publisher_id")
     @JsonIgnore
     private Publisher publisher;
 
+    //one to many
     @OneToMany(mappedBy = "author", orphanRemoval = true)
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Book> bookList;
