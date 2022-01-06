@@ -1,5 +1,7 @@
 package com.example.project2.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 //connect to postgres - database of book
@@ -20,9 +22,15 @@ public class Book {
     @Column
     private String release_date;
 
+    @ManyToOne
+    @JoinColumn(name="author_id")
+    @JsonIgnore
+    private Author author;
 
-
-
+    @ManyToOne
+    @JoinColumn(name="genre_id")
+    @JsonIgnore
+    private Genre genre;
 
 //default constructor
     public Book() {
