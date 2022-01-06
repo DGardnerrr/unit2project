@@ -77,7 +77,4 @@ public class Book {
         this.release_date = release_date;
     }
 
-
-
-
 }

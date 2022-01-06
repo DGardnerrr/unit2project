@@ -19,10 +19,10 @@ public class Genre {
     private Long id;
 
     @Column
-    private String name;
+    private String name;    //genre name
 
     @Column
-    private String description;
+    private String description;  //genre description
 
 //one to many
     @OneToMany(mappedBy = "genre", orphanRemoval = true)

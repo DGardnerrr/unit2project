@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class BookRepository {
+public class BookRepository extends JpaRepository<Book, Long> {
 
 }
