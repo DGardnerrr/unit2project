@@ -2,7 +2,11 @@ package com.example.project2.model;
 
 //connect to postgres - database of publisher
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name="publishers")
@@ -21,6 +25,10 @@ public class Publisher {
 
     @Column
     private int revenue;    //revenue made
+
+    @OneToMany(mappedBy = "publisher", orphanRemoval = true)
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<Author> authorList;
 
     public Publisher() {
     }
