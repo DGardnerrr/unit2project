@@ -1,4 +1,79 @@
 package com.example.project2.model;
 
+//connect to postgres - database of publisher
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="publishers")
 public class Publisher {
+
+    @Id
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;      //Id
+
+    @Column
+    private String name;    //publisher name
+
+    @Column
+    private int num_authors;  //number authors for each publisher
+
+    @Column
+    private int revenue;    //revenue made
+
+    public Publisher() {
+    }
+
+    public Publisher(Long id, String name, int num_authors, int revenue) {
+        this.id = id;
+        this.name = name;
+        this.num_authors = num_authors;
+        this.revenue = revenue;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getNum_authors() {
+        return num_authors;
+    }
+
+    public void setNum_authors(int num_authors) {
+        this.num_authors = num_authors;
+    }
+
+    public int getRevenue() {
+        return revenue;
+    }
+
+    public void setRevenue(int revenue) {
+        this.revenue = revenue;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

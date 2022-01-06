@@ -2,7 +2,7 @@ package com.example.project2.model;
 
 import javax.persistence.*;
 
-//connect to postgres - database
+//connect to postgres - database of book
 @Entity
 @Table(name = "books")
 public class Book {
@@ -26,9 +26,9 @@ public class Book {
 
     public Book(Long id, String name, Float length, String release_date) {
         this.id = id;
-        this.name = name;
-        this.length = length;
-        this.release_date = release_date;
+        this.name = name;                  //book name
+        this.length = length;              //length
+        this.release_date = release_date;  //release date of book
     }
 
     public Long getId() {
@@ -62,6 +62,8 @@ public class Book {
     public void setRelease_date(String release_date) {
         this.release_date = release_date;
     }
+
+
 
 
 }

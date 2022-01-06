@@ -4,6 +4,7 @@ package com.example.project2.model;
 
 import javax.persistence.*;
 
+//connect to postgres - database of genre
 @Entity
 @Table(name="genres")
 public class Genre {
