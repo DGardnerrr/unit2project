@@ -31,6 +31,7 @@ public class Publisher {
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Author> authorList;
 
+    //default constructor
     public Publisher() {
     }
 
