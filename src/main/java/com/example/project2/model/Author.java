@@ -38,6 +38,7 @@ public class Author {
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Book> bookList;
 
+    //default constructor
     public Author() {
     }
 
