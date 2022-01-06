@@ -29,7 +29,7 @@ public class Genre {
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Book> bookList;
 
-
+//default constructor
     public Genre() {
     }
 
