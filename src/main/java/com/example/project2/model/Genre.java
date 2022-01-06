@@ -39,6 +39,7 @@ public class Genre {
         this.description = description;
     }
 
+    //setters and getters
     public Long getId() {
         return id;
     }
