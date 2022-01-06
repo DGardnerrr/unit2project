@@ -1,6 +1,11 @@
 package com.example.project2.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
+import java.util.List;
 
 //connect to postgres - database of author
 @Entity
@@ -21,6 +26,16 @@ public class Author {
 
     @Column
     private int monthly_books;
+
+
+    @ManyToOne
+    @JoinColumn(name="publisher_id")
+    @JsonIgnore
+    private Publisher publisher;
+
+    @OneToMany(mappedBy = "author", orphanRemoval = true)
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<Book> bookList;
 
     public Author() {
     }
