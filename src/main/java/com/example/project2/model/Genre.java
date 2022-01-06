@@ -2,7 +2,11 @@ package com.example.project2.model;
 
 //connect to postgres - database
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
+import java.util.List;
 
 //connect to postgres - database of genre
 @Entity
@@ -19,6 +23,12 @@ public class Genre {
 
     @Column
     private String description;
+
+
+    @OneToMany(mappedBy = "genre", orphanRemoval = true)
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<Book> bookList;
+
 
     public Genre() {
     }
