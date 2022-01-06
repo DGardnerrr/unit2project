@@ -31,6 +31,7 @@ public class Book {
         this.release_date = release_date;  //release date of book
     }
 
+    //getters and setters
     public Long getId() {
         return id;
     }
