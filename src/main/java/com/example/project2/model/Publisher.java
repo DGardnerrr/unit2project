@@ -42,6 +42,7 @@ public class Publisher {
         this.revenue = revenue;
     }
 
+    //setters and getters
     public Long getId() {
         return id;
     }
