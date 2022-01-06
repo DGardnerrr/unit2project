@@ -26,6 +26,7 @@ public class Publisher {
     @Column
     private int revenue;    //revenue made
 
+    //one to many
     @OneToMany(mappedBy = "publisher", orphanRemoval = true)
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Author> authorList;
