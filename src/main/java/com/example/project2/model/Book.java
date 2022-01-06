@@ -22,6 +22,7 @@ public class Book {
     @Column
     private String release_date;
 
+    //many to one
     @ManyToOne
     @JoinColumn(name="author_id")
     @JsonIgnore
