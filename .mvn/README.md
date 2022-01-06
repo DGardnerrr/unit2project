@@ -26,6 +26,7 @@ As a user, I should be able to update catalog of publisher.
 As a user, I should be able to delete the current publisher in the catalog.
 
 
-Timeline Day 1 - Use Maven to download and build all of the dependencies, set up Spring Boot, set up dev environment, etc.
+Timeline 
+Day 1 - Use Maven to download and build all of the dependencies, set up Spring Boot, set up dev environment, etc.
 
 
