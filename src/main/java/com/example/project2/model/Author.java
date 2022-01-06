@@ -42,6 +42,7 @@ public class Author {
     public Author() {
     }
 
+
     public Author(Long id, String name, String description, int monthly_books) {
         this.id = id;
         this.name = name;
@@ -49,6 +50,7 @@ public class Author {
         this.monthly_books = monthly_books;
     }
 
+    //getters and setters
     public Long getId() {
         return id;
     }
