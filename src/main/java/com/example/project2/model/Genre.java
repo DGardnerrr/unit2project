@@ -24,7 +24,7 @@ public class Genre {
     @Column
     private String description;
 
-
+//one to many
     @OneToMany(mappedBy = "genre", orphanRemoval = true)
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Book> bookList;
