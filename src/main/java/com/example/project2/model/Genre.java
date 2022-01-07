@@ -2,6 +2,7 @@ package com.example.project2.model;
 
 //connect to postgres - database
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
@@ -29,7 +30,13 @@ public class Genre {
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Book> bookList;
 
-//default constructor
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    @JsonIgnore
+    private User user;
+
+
+    //default constructor
     public Genre() {
     }
 

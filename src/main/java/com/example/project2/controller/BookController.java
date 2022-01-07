@@ -79,6 +79,7 @@ public class BookController {
                 Book updateBook = bookRepository.findById(bookID).get();
                 updateBook.setName(bookObject.getName());
                 updateBook.setRelease_date(bookObject.getRelease_date());
+                updateBook.setLength(bookObject.getLength());
                 return bookRepository.save(updateBook);
             }
         } else {

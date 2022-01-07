@@ -80,6 +80,7 @@ public class AuthorController {
                 Author updateAuthor = authorRepository.findById(authorID).get();
                 updateAuthor.setName(authorObject.getName());
                 updateAuthor.setDescription(authorObject.getDescription());
+                updateAuthor.setMonthly_books(authorObject.getMonthly_books());
                 return authorRepository.save(updateAuthor);
             }
         } else {

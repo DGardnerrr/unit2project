@@ -38,6 +38,11 @@ public class Author {
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Book> bookList;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    @JsonIgnore
+    private User user;
+
     //default constructor
     public Author() {
     }

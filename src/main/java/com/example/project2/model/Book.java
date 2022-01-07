@@ -33,7 +33,13 @@ public class Book {
     @JsonIgnore
     private Genre genre;
 
-//default constructor
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    @JsonIgnore
+    private User user;
+
+
+    //default constructor
     public Book() {
     }
 
