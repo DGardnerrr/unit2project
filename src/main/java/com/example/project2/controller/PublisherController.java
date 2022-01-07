@@ -67,12 +67,19 @@ public Publisher updatePublisher(@PathVariable(value = "publisherID") Long publi
 
 }
 
-
-
-
-
-
-
+//delete a single publisher
+@DeleteMapping(path = "/books/{bookid}/publishers/{publisherid}")
+public String deletePublisher(@PathVariable(value = "publisherID") Long publisherID) {
+    LOGGER.info("calling deletePublisher method from publisher controller");
+    Optional<Publisher> publisher = publisherRepository.findById(publisherID);
+    if (publisher.isPresent()) {
+        publisherRepository.deleteById(publisherID);
+    } else {
+        throw new InformationNotFoundException("publisher with id " + publisherID + " not found");
+    }
+    return "deleting publisher with id of " + publisherID;
+}
 
 }
+
 
