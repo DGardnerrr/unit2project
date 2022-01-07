@@ -2,12 +2,11 @@ package com.example.project2.controller;
 
 
 
+import com.example.project2.exception.InformationExistsException;
 import com.example.project2.model.Publisher;
 import com.example.project2.repository.PublisherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -32,7 +31,17 @@ public class PublisherController {
         return publisherRepository.findAll();
     }
 
-
+//create single publisher
+@PostMapping(path = "/books/{bookid}/publishers/{publisherid}")
+public Publisher createPublisher(@RequestBody Publisher publisherObject){
+    LOGGER.info("calling createPublisher method from publisher controller");
+    Publisher publisher = publisherRepository.findByName(publisherObject.getName());
+    if (publisher != null) {
+        throw new InformationExistsException("publisher with name " + publisher.getName() + " already exists");
+    } else {
+        return publisherRepository.save(publisherObject);
+    }
+}
 
 
 
