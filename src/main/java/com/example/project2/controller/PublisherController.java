@@ -3,12 +3,14 @@ package com.example.project2.controller;
 
 
 import com.example.project2.exception.InformationExistsException;
+import com.example.project2.exception.InformationNotFoundException;
 import com.example.project2.model.Publisher;
 import com.example.project2.repository.PublisherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.logging.Logger;
 
 @RestController
@@ -41,6 +43,28 @@ public Publisher createPublisher(@RequestBody Publisher publisherObject){
     } else {
         return publisherRepository.save(publisherObject);
     }
+}
+
+//update a single publisher
+@PutMapping(path = "/books/{bookid}/publishers/{publisherid}")
+public Publisher updatePublisher(@PathVariable(value = "publisherID") Long publisherID, @RequestBody Publisher publisherObject) {
+    LOGGER.info("calling updatePublisher method from publisher controller");
+    Optional<Publisher> publisher= publisherRepository.findById(publisherID);
+    if (publisher.isPresent()) {
+        if (publisherObject.getName().equals(publisher.get().getName())) {
+            LOGGER.warning("publisher name is equals to database object name");
+            throw new InformationExistsException("publisher " + publisher.get().getName() + " already exists");
+        } else {
+            Publisher updatePublisher = publisherRepository.findById(publisherID).get();
+            updatePublisher.setName(publisherObject.getName());
+            updatePublisher.setNum_authors(publisherObject.getNum_authors());
+            updatePublisher.setRevenue(publisherObject.getRevenue());
+            return publisherRepository.save(updatePublisher);
+        }
+    } else {
+        throw new InformationNotFoundException("publisher with id " + publisherID + " not found");
+    }
+
 }
 
 
