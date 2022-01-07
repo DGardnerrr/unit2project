@@ -67,7 +67,7 @@ public class AuthorController {
         return "deleting author with id of " + authorID;
     }
 
-
+// update single author
     @PutMapping(path = " /books/{bookid}/authors/{authorid}")
     public Author updateAuthor(@PathVariable(value = "authorID") Long authorID, @RequestBody Author authorObject) {
         LOGGER.info("calling updateAuthor method from author controller");
