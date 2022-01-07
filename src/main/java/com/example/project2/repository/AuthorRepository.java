@@ -1,11 +1,14 @@
 package com.example.project2.repository;
 
-
-import com.example.project2.model.Genre;
+import com.example.project2.model.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+
 @Repository
-public interface GenreRepository extends JpaRepository<Genre, Long> {
-    Genre findByName(String genreName);
+public interface AuthorRepository  extends JpaRepository<Author,Long> {
+    Author findByName(String authorName);
 }
+
+
+
