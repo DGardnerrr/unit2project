@@ -19,13 +19,13 @@ public class Author {
     private Long id;
 
     @Column
-    private String name;
+    private String name;   //name
 
     @Column
-    private String description;
+    private String description; //description
 
     @Column
-    private int monthly_books;
+    private int monthly_books; //monthly books
 
 //many to one
     @ManyToOne
