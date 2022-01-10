@@ -92,9 +92,32 @@ public class Author {
 
 
 
+    public Publisher getPublisher() {
+        return publisher;
+    }
 
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
+    }
 
+    public List<Book> getBookList() {
+        return bookList;
+    }
 
+    public void setBookList(List<Book> bookList) {
+        this.bookList = bookList;
+    }
 
+    public User getUser() {
+        return user;
+    }
 
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public void setMonthly_books(Book book) {
+    }
 }
+
+

@@ -83,15 +83,26 @@ public class Publisher {
     }
 
 
+    public List<Author> getAuthorList() {
+        return authorList;
+    }
+
+    public void setAuthorList(List<Author> authorList) {
+        this.authorList = authorList;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
 
+    public void setRevenue(Book book) {
+    }
 
-
-
-
-
-
-
-
-
+    public void setNum_authors(Book book) {
+    }
 }

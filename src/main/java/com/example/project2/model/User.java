@@ -17,7 +17,7 @@ public class User {
     private Long id;
 
     @Column
-    private String userName;
+    private String username;
 
     @Column(unique = true)
     private String emailAddress;
@@ -59,6 +59,12 @@ public class User {
     public User() {
     }
 
+    public User(Long id, String username, String email, String password) {
+        this.id = id;
+        this.username = username;
+        this.emailAddress = email;
+        this.password = password;
+    }
 //setters and getters
     public Long getId() {
         return id;
@@ -69,11 +75,11 @@ public class User {
     }
 
     public String getUserName() {
-        return userName;
+        return username;
     }
 
     public void setUserName(String userName) {
-        this.userName = userName;
+        this.username = userName;
     }
 
     public String getEmailAddress() {
@@ -99,6 +105,7 @@ public class User {
     public void setUserProfile(UserProfile userProfile) {
         this.userProfile = userProfile;
     }
+
 
 
 
@@ -138,7 +145,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", userName='" + username + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
                 ", password='" + password + '\'' +
                 '}';

@@ -78,7 +78,15 @@ public class UserProfile {
         this.profileDescription = profileDescription;
     }
 
-
+    @Override
+    public String toString() {
+        return "UserProfile{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", profileDescription='" + profileDescription + '\'' +
+                '}';
+    }
 
 
 

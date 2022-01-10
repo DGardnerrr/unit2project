@@ -83,4 +83,33 @@ public class Book {
         this.release_date = release_date;
     }
 
+    public void setGenre(Genre genre){this.genre = genre;}
+
+    public Genre getGenre(){return genre;}
+    @Override
+    public String toString() {
+        return "book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", length=" + length +
+                ", release_date='" + release_date + '\'' +
+                '}';
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author= author;
+    }
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+
 }
