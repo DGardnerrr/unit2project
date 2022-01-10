@@ -1,6 +1,18 @@
-Technologies Used: IntelliJ, ERD Tool/Lucidchart, Spring Boot,Maven,postgres,pgAdmin, Postman
+Machineries Used: IntelliJ, ERD Tool/Lucidchart, Spring Boot,Maven,postgres,pgAdmin, Postman
 
 Project description: Created REST Api for database of a book app. The REST API will allow the User to keep track of their Books, Genres, Authors, and Publishers.
+
+General Approach:
+1. time management - 
+
+Hurdles:
+1. debugging during certain parts project - Intelliji is strict on errors unlike Visual Studio Code . If there is one minor error on intelliji, the code will not be able to completely run.There was alot of trial & error involved here, it required lots of attention to detail.
+
+2. being able to manauver throughout the project and complete each part in a certain amount of time
+since most of the work was done solo
+
+3. Making use of One to many, Many To Many mapping for the relations between models - This involved lots of trial and error and research
+
 
 link to ERD diagram : https://lucid.app/lucidchart/f625e5d0-3422-4928-8224-e278f466f0c2/edit?invitationId=inv_92add0b3-91da-436e-9021-e70908a888ff
 User Stories
@@ -63,9 +75,9 @@ Endpoints:
 As a user, I should be able to read the book.
 As a user, I should be able to update the book.
 As a user, I should be able to delete a book.
-As a user, I should be able to find a book based on the Author information.
-As a user, I should be able to find a book based on the Genre information
-As a user, I should be able to find a book based on the Publisher information
+As a user, I should be able to find a book based on the Author's information.
+As a user, I should be able to find a book based on the Genre's  information
+As a user, I should be able to find a book based on the Publisher's  information
 
 
 As a user, I should be able to read a genre.
@@ -110,3 +122,4 @@ Day 8 - polishing up for presentation
 
 
 
+Installation instructions:
