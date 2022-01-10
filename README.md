@@ -125,3 +125,7 @@ Day 8 - polishing up for presentation
 
 
 Installation instructions:
+- Fork and clone the repository. 
+- create a database called project2app with pgadmin
+- Make sure database url is connected in application dev properties to prevent any external database issues
+- Open the file project2app/src/main/resources/application-dev.properties and change lines 1 to the proper port number and 3 & 4 to be your postgres username and password
