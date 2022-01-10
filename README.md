@@ -33,44 +33,47 @@ Technical Requirements:
 
 Endpoints:
 
-(1.Books) [GET] endpoint: "/api/books" - Get all Books - Request Type: None
+(1.Books) 
+- [GET] endpoint: "/api/books" - Get all Books - Request Type: None
 
-[GET] endpoint: "/api/books/{bookId}" - Get a single book - Request Type: None *
+- [GET] endpoint: "/api/books/{bookId}" - Get a single book - Request Type: None *
 
-[POST] endpoint: "/api/books/" - Creating a Single Book - Request Body: book info
+- [POST] endpoint: "/api/books/" - Creating a Single Book - Request Body: book info
 
-[PUT] endpoint: "/api/books/{bookId}" - Updating Single Book - Request Body: book info
+- [PUT] endpoint: "/api/books/{bookId}" - Updating Single Book - Request Body: book info
 
-[DELETE] endpoint: "/api/books/{bookId}" - Delete Single Book - Request Body; None
+- [DELETE] endpoint: "/api/books/{bookId}" - Delete Single Book - Request Body; None
 
-(2.Genres) [GET] endpoint: "/genres" - Get all Genres- Request Body: None
+(2.Genres) 
+- [GET] endpoint: "/genres" - Get all Genres- Request Body: None
 
-[GET] endpoint: "/api/genres/{genreId}" - Get single genre - Request Type: None *
+- [GET] endpoint: "/api/genres/{genreId}" - Get single genre - Request Type: None *
 
-[POST] endpoint: "/api/books/{bookId}/genres" - creates book & add genre info to book - Request Body: genre info
+- [POST] endpoint: "/api/books/{bookId}/genres" - creates book & add genre info to book - Request Body: genre info
 
-[PUT] endpoint: "/api/genres/{genreId}" - Update a Single Genre - Request Body: genre info
+- [PUT] endpoint: "/api/genres/{genreId}" - Update a Single Genre - Request Body: genre info
 
-[DELETE] endpoint: "/api/genres/{genreId}" - Delete a Single Genre - Request Body : None
+- [DELETE] endpoint: "/api/genres/{genreId}" - Delete a Single Genre - Request Body : None
 
-(3.Publishers) [GET] endpoint: "/api/publishers" - Get all Publishers - Request Type: None
+(3.Publishers)
+- [GET] endpoint: "/api/publishers" - Get all Publishers - Request Type: None
 
-[GET] endpoint: "/api/publishers/{publisherId}" - Get a single publisher - Request Type: None *
+- [GET] endpoint: "/api/publishers/{publisherId}" - Get a single publisher - Request Type: None *
 
-[POST]endpoint: "/api/books/{bookId}/publisher" - creates book and add publisher info to book   - Request Type: publisher info
+- [POST]endpoint: "/api/books/{bookId}/publisher" - creates book and add publisher info to book   - Request Type: publisher info
 
-[PUT] endpoint: "/api/publishers/{publisherId}" - Update a Single Publisher
+- [PUT] endpoint: "/api/publishers/{publisherId}" - Update a Single Publisher
 
-[DELETE] endpoint:"/api/publishers/{publisherId}" - Delete a Single Publisher
+- [DELETE] endpoint:"/api/publishers/{publisherId}" - Delete a Single Publisher
 (4.Authors)
 
-[GET] endpoint: "/api/authors" - Get all authors
+- [GET] endpoint: "/api/authors" - Get all authors
 
-[GET] endpoint: "/api/authors/{authorId}" - Get a single author
-[POST] endpoint: "/books/{bookId}/authors" - create a book and add a author's info to the book
+- [GET] endpoint: "/api/authors/{authorId}" - Get a single author
+- [POST] endpoint: "/books/{bookId}/authors" - create a book and add a author's info to the book
 
-[PUT] endpoint: "/api/authors/{authorId}" - Update a Single Author
-[DELETE] endpoint: "api/authors/{authorId}" - Delete a Single Author
+- [PUT] endpoint: "/api/authors/{authorId}" - Update a Single Author
+- [DELETE] endpoint: "api/authors/{authorId}" - Delete a Single Author
 
 
 
