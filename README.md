@@ -20,15 +20,15 @@ link to ERD diagram : https://lucid.app/lucidchart/f625e5d0-3422-4928-8224-e278f
 User Stories
 
 Technical Requirements:
-1.Persist at least four models eg: (Book, Author, Genre, Publisher) to a PostgreSQL database.
-2.Use Spring Profiles for environment settings.
-3.At least one API endpoint must perform full CRUD create, read, update, and delete actions.
-4.Other API endpoints can perform CRUD based on the business use-case.
-5.Expose CRUD routes that were built using REST conventions.
-6.Handle exceptions gracefully.
-7.Send appropriate messages back to the client in the event that an exception occurs.
-8.Must have Controller and Service separate.
-9.Document each end-point
+- Persist at least four models eg: (Book, Author, Genre, Publisher) to a PostgreSQL database.
+- Use Spring Profiles for environment settings.
+- At least one API endpoint must perform full CRUD create, read, update, and delete actions.
+- Other API endpoints can perform CRUD based on the business use-case.
+- Expose CRUD routes that were built using REST conventions.
+- Handle exceptions gracefully.
+- Send appropriate messages back to the client in the event that an exception occurs.
+- Must have Controller and Service separate.
+- Document each end-point
 
 
 Endpoints:
