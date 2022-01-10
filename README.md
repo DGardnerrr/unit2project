@@ -1,4 +1,4 @@
-Machineries Used: IntelliJ, ERD Tool/Lucidchart, Spring Boot,Maven,postgres,pgAdmin, Postman
+Machineries Used: IntelliJ, ERD Tool/Lucidchart, Spring Boot,Maven,postgres/pgAdmin, Postman, Git, Github
 
 Project description: Created REST Api for database of a book app. The REST API will allow the User to keep track of their Books, Genres, Authors, and Publishers.
 
@@ -78,6 +78,9 @@ Endpoints:
 - [PUT] endpoint: "/api/publishers/{publisherId}" - Update a Single Publisher
 
 - [DELETE] endpoint:"/api/publishers/{publisherId}" - Delete a Single Publisher
+
+
+
 (4.Authors)
 
 - [GET] endpoint: "/api/authors" - Get all authors
