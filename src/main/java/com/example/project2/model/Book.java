@@ -11,16 +11,16 @@ public class Book {
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id;     //book id
 
     @Column
-    private String name;
+    private String name;   //book name
 
     @Column
-    private Float length;
+    private Float length;  //length
 
     @Column
-    private String release_date;
+    private String release_date; //book release date
 
     //many to one
     @ManyToOne
@@ -86,15 +86,7 @@ public class Book {
     public void setGenre(Genre genre){this.genre = genre;}
 
     public Genre getGenre(){return genre;}
-    @Override
-    public String toString() {
-        return "book{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", length=" + length +
-                ", release_date='" + release_date + '\'' +
-                '}';
-    }
+
 
     public Author getAuthor() {
         return author;

@@ -8,6 +8,7 @@ import javax.persistence.*;
 import java.util.List;
 
 //connect to postgres - database of author
+//
 @Entity
 @Table(name="authors")
 public class Author {
