@@ -3,18 +3,28 @@ Machineries Used: IntelliJ, ERD Tool/Lucidchart, Spring Boot,Maven,postgres,pgAd
 Project description: Created REST Api for database of a book app. The REST API will allow the User to keep track of their Books, Genres, Authors, and Publishers.
 
 General Approach:
-1. time management, project management - came up with a timeline of what needs to be completed each day
+- time management, project management - came up with a timeline of what needs to be completed each day
    (This is very important, especially when working solo) . 
-2. created erd diagram - outline of that to include in model 
-
+- Decided on four models for the book app; These models are going to be Book, Author, Publisher, and Genre
+- created erd diagram - outline of what needs to be included in the 4 models
+- Developed specific user stories to help with backend logic for the book, author, publisher, genre models. The purpose of these user stories was to
+   (this helped to generate better understanding of book app's features from the end user’s perspective, For example: what would the user want out of this book app? How can this app benefit the user?)
+- added dependencies in pom.xl, set up development environment, created test endpoints for controller/s to ensure server is running
+- created models, decided to have 1 controller (book controller and book service)  to make thing less complicated, book  controller was created for models, tested api endpoints for the necessary controller/s
+- created repositories for the models
+- exception handling classes were created and incorporated
+- Since this was a different project scope, decided to not add security
+- created service class which service as connection to controller class
 
 Hurdles:
 1. debugging during certain parts project - Intelliji is strict on errors unlike Visual Studio Code . If there is one minor error on intelliji, the code will not be able to completely run.There was alot of trial & error involved here, it required lots of attention to detail.
 
 2. being able to manauver throughout the project and complete each part in a certain amount of time
-since most of the work was done solo
+since most of the work was done solo. Despite that, it was a win at the same time because it gave me more exposure to
+the importance of time management & agile project management in software development. This is a valuable skill that can be applied in the 
+near future.
 
-3. Making use of One to many, Many To Many mapping for the relations between models - This involved lots of trial and error and research
+3.Making use of One to many, Many To Many mapping for the relations between models - This involved lots of trial, error and research
 
 
 link to ERD diagram : https://lucid.app/lucidchart/f625e5d0-3422-4928-8224-e278f466f0c2/edit?invitationId=inv_92add0b3-91da-436e-9021-e70908a888ff
@@ -32,18 +42,20 @@ Technical Requirements:
 - Document each end-point
 
 
+
+
 Endpoints:
 
 (1.Books) 
-- [GET] endpoint: "/api/books" - Get all Books - Request Type: None
+- [GET] endpoint: "/api/books" - Get all Books 
 
-- [GET] endpoint: "/api/books/{bookId}" - Get a single book - Request Type: None *
+- [GET] endpoint: "/api/books/{bookId}" - Get a single book 
 
-- [POST] endpoint: "/api/books/" - Creating a Single Book - Request Body: book info
+- [POST] endpoint: "/api/books/" - Creating a Single Book 
 
-- [PUT] endpoint: "/api/books/{bookId}" - Updating Single Book - Request Body: book info
+- [PUT] endpoint: "/api/books/{bookId}" - Updating Single Book 
 
-- [DELETE] endpoint: "/api/books/{bookId}" - Delete Single Book - Request Body; None
+- [DELETE] endpoint: "/api/books/{bookId}" - Delete Single Book 
 
 (2.Genres) 
 - [GET] endpoint: "/genres" - Get all Genres- Request Body: None
@@ -86,20 +98,21 @@ Endpoints:
 - As a user, I should be able to find a book based on the Publisher's  information
 
 
-- As a user, I should be able to read a genre.
-- As a user, I should be able to update a genre.
-- As a user, I should be able to delete a genre.
+- As a user, I should be able to read a genre of a book
+- As a user, I should be able to update a genre of book
+- As a user, I should be able to delete a genre of book.
 
 
 
-As a user, I should be able to read who is the author.
-As a user, I should be able to update catalog of author.
-As a user, I should be able to delete the current author in the catalog.
+- As a user, I should be able to read who is the author of book
+- As a user, I should be able to update catalog of author's book
+- As a user, I should be able to delete the current author in the book.
 
 
-As a user, I should be able to read who is the publisher.
-As a user, I should be able to update catalog of publisher.
-As a user, I should be able to delete the current publisher in the catalog.
+- As a user, I should be able to read who is the publisher of the book.
+- As a user, I should be able to update catalog of publisher of the book.
+- As a user, I should be able to delete the current publisher that I no longer want to  search 
+for in the catalog of the book
 
 
 Timeline

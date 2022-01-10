@@ -89,7 +89,7 @@ public class BookController {
         return bookService.getAuthor(authorId);
     }
 
-    //create a book and add a author's info to the book
+    //create a book and add a author's information to the book
     //http://localhost:9092/api/books/1/authors
     @PostMapping(path = "/books/{bookId}/authors")
     public Author createAuthor(@PathVariable Long bookId, @RequestBody Author authorObject) {
@@ -132,7 +132,7 @@ public class BookController {
         return bookService.getGenre(genreId);
     }
 
-    //create book and add genre info
+    //create book and add genre info to book
     //http://localhost:9092/api/books/1/genres
     @PostMapping(path = "/books/{bookId}/genres")
     public Genre createGenre(@PathVariable Long bookId, @RequestBody Genre genreObject) {

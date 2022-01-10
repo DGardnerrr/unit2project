@@ -19,9 +19,10 @@ Technical Requirements:
 
 Endpoints:
 
-(1.Books) [GET] endpoint: "/api/books" - Get all Books - Request Type: None
+(1.Books) 
+- [GET] endpoint: "/api/books" - Get all Books - Request Type: None
 
-[GET] endpoint: "/api/books/{bookId}" - Get a single book - Request Type: None *
+-[GET] endpoint: "/api/books/{bookId}" - Get a single book - Request Type: None *
 
 [POST] endpoint: "/api/books/" - Creating a Single Book - Request Body: book info
 
