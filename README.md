@@ -3,8 +3,9 @@ Machineries Used: IntelliJ, ERD Tool/Lucidchart, Spring Boot,Maven,postgres,pgAd
 Project description: Created REST Api for database of a book app. The REST API will allow the User to keep track of their Books, Genres, Authors, and Publishers.
 
 General Approach:
-1. time management, project management - came up with a outline/timeline of what needs to be completed each day
-   (This is very important, especially when working solo)
+1. time management, project management - came up with a timeline of what needs to be completed each day
+   (This is very important, especially when working solo) . 
+2. created erd diagram - outline of that to include in model 
 
 
 Hurdles:
@@ -77,17 +78,14 @@ Endpoints:
 
 
 
-As a user, I should be able to read the book.
-As a user, I should be able to update the book.
-As a user, I should be able to delete a book.
-As a user, I should be able to find a book based on the Author's information.
-As a user, I should be able to find a book based on the Genre's  information
-As a user, I should be able to find a book based on the Publisher's  information
+- As a user, I should be able to find a book based on the Author's information.
+- As a user, I should be able to find a book based on the Genre's  information
+- As a user, I should be able to find a book based on the Publisher's  information
 
 
-As a user, I should be able to read a genre.
-As a user, I should be able to update a genre.
-As a user, I should be able to delete a genre.
+- As a user, I should be able to read a genre.
+- As a user, I should be able to update a genre.
+- As a user, I should be able to delete a genre.
 
 
 
