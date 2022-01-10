@@ -21,6 +21,8 @@ import java.util.logging.Logger;
 
 
 //service layer incorporated for the controller
+//incorporated exceptions into the service class
+//
 @Service
 public class BookService {
 
