@@ -17,9 +17,6 @@ Technical Requirements:
 9.Document each end-point
 
 
-
-
-
 Endpoints:
 
 (1.Books) [GET] endpoint: "/api/books" - Get all Books - Request Type: None
@@ -91,10 +88,27 @@ As a user, I should be able to delete the current publisher in the catalog.
 
 Timeline 
 Day 1 - Use Maven to download and build all of the dependencies, set up Spring Boot, set up dev environment, created user stories, erd diagram
+
+
 Day 2 - created models (book, genre,publisher,author,etc.), use PostgreSQL  Spring Data to interact with database, mapped models together
+
+
+
 Day 3 - created rest controller(s), tested endpoints for controller(s), created exceptions 
+
+
+
 Day 4 - fixed debugging issues - with database, one of tables will not show up on postgresql
-Day 6 - polishing up for presentation, ensure
-Day 7 - fixed debugging issues -service layers & controller
+
+
+
+
+Day 5, 6 & 7 - fixed debugging issues -service layers & controller
+
+
+
+
+Day 8 - polishing up for presentation
+
 
 
