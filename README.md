@@ -3,7 +3,9 @@ Machineries Used: IntelliJ, ERD Tool/Lucidchart, Spring Boot,Maven,postgres,pgAd
 Project description: Created REST Api for database of a book app. The REST API will allow the User to keep track of their Books, Genres, Authors, and Publishers.
 
 General Approach:
-1. time management - 
+1. time management, project management - came up with a outline/timeline of what needs to be completed each day
+   (This is very important, especially when working solo)
+
 
 Hurdles:
 1. debugging during certain parts project - Intelliji is strict on errors unlike Visual Studio Code . If there is one minor error on intelliji, the code will not be able to completely run.There was alot of trial & error involved here, it required lots of attention to detail.
