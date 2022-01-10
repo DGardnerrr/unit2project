@@ -96,22 +96,23 @@ Endpoints:
 
 
 //===User Stories===//
+[Book]
 - As a user, I should be able to find a book based on the Author's information.
 - As a user, I should be able to find a book based on the Genre's  information
 - As a user, I should be able to find a book based on the Publisher's  information
 
-
+[Genre]
 - As a user, I should be able to read a genre of a book
 - As a user, I should be able to update a genre of book
 - As a user, I should be able to delete a genre of book.
 
 
-
+[Author]
 - As a user, I should be able to read who is the author of book
 - As a user, I should be able to update catalog of author's book
 - As a user, I should be able to delete the current author in the book.
 
-
+[Publisher]
 - As a user, I should be able to read who is the publisher of the book.
 - As a user, I should be able to update catalog of publisher of the book.
 - As a user, I should be able to delete the current publisher that I no longer want to  search 
