@@ -30,6 +30,7 @@ public class Genre {
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Book> bookList;
 
+    //many to one
     @ManyToOne
     @JoinColumn(name = "user_id")
     @JsonIgnore
